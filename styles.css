@@ -9,7 +9,13 @@ body {
     color: var(--primary-text);
     fill: var(--primary-text);
     font-family: "Roboto", sans-serif;
-    padding: 0rem 5rem;
+    padding: 2rem 5rem;
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        padding: 2rem 2rem;
+    }
 }
 
 a {
@@ -22,11 +28,26 @@ a {
 }
 
 .title {
-    font-size: 5dvw;
+    font-size: 8vw;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 3vw;
+    font-weight: 300;
 }
 
 .mb-1 {
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.50rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.85rem;
+}
+
+.mx-1 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
 }
 
 .container {
@@ -43,6 +64,10 @@ a {
 
 .d-flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .justify-content-center {
@@ -74,6 +99,13 @@ a {
 }
 
 .nav-container {
-    height: 4.5rem;
-    width: 6.5rem;
+    height: 12.5vh;
+    width: 20vw;
+}
+
+@media screen and (orientation: portrait) {
+    .nav-container {
+        height: 12.5vh;
+        width: 60vw;
+    }
 }
